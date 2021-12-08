@@ -2,7 +2,7 @@
 
 namespace FootballSeasonBuilder.Controllers
 {
-    public class HomeController : Controller
+    public class MatchController : Controller
     {
         public IActionResult Index()
         {
