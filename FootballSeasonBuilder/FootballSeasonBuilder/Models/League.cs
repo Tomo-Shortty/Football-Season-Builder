@@ -1,9 +1,10 @@
 ﻿namespace FootballSeasonBuilder.Models
 {
-    public class RoundModel
+    public class League
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public LeagueModel League { get; set; }
+        public int NumTeams { get; set; }
+        public int NumMatches { get; set; }
     }
 }
