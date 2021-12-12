@@ -17,6 +17,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.NumRounds)
             </th>
+            <th />
         </tr>
         @foreach (var item in Model)
         {
@@ -29,6 +30,9 @@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.NumRounds)
+                </td>
+                <td>
+                    <a asp-controller="Home" asp-action="Team">View Teams</a>
                 </td>
             </tr>
         }
