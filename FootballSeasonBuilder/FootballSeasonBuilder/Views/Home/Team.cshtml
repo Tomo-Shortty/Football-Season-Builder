@@ -1,8 +1,148 @@
-﻿@{
+﻿@model IEnumerable<FootballSeasonBuilder.Models.Team>
+
+@{
     ViewData["Title"] = "Team";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Team</h1>
-    <p>Team details to be displayed below....</p>
+    <h1 class="display-4">Teams</h1>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.League)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumWins)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumDraws)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumLoses)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LeaguePoints)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PointsDifference)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PointsFor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PointsAgainst)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LadderPosition)
+            </th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.League.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumWins)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumDraws)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumLoses)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LeaguePoints)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PointsDifference)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PointsFor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PointsAgainst)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LadderPosition)
+                </td>
+            </tr>
+        }
+    </table>
+    <p>Add Team</p>
+    <form method="post">
+        <label for="Name">Name</label>
+        <input type="text" name="Name" /><br />
+        <label for="League">League</label>
+        <select name="League">
+            @foreach (var item in Model)
+            {
+                <option value="@item.League">@Html.DisplayFor(modelItem => item.League.Name)</option>
+            }
+        </select><br />
+        <label for="PrimaryColour">Primary Colour</label>
+        <select name="PrimaryColour">
+            <option value="Beige">Beige</option>
+            <option value="Black">Black</option>
+            <option value="Blue">Blue</option>
+            <option value="SaddleBrown">Brown</option>
+            <option value="Cyan">Cyan</option>
+            <option value="DarkRed">Dark Red</option>
+            <option value="Gold">Gold</option>
+            <option value="Gray">Gray</option>
+            <option value="Green">Green</option>
+            <option value="Indigo">Indigo</option>
+            <option value="Lime">Lime</option>
+            <option value="Maroon">Maroon</option>
+            <option value="MidnightBlue">Midnight Blue</option>
+            <option value="Orange">Orange</option>
+            <option value="Pink">Pink</option>
+            <option value="Purple">Purple</option>
+            <option value="Red">Red</option>
+            <option value="Silver">Silver</option>
+            <option value="DarkSlateGray">Slate Gray</option>
+            <option value="SkyBlue">Sky Blue</option>
+            <option value="Tan">Tan</option>
+            <option value="Teal">Teal</option>
+            <option value="Violet">Violet</option>
+            <option value="White">White</option>
+            <option value="Yellow">Yellow</option>            
+        </select><br />
+        <label for="SecondaryColour">Secondary Colour</label>
+        <select name="SecondaryColour">
+            <option value="Beige">Beige</option>
+            <option value="Black">Black</option>
+            <option value="Blue">Blue</option>
+            <option value="SaddleBrown">Brown</option>
+            <option value="Cyan">Cyan</option>
+            <option value="DarkRed">Dark Red</option>
+            <option value="Gold">Gold</option>
+            <option value="Gray">Gray</option>
+            <option value="Green">Green</option>
+            <option value="Indigo">Indigo</option>
+            <option value="Lime">Lime</option>
+            <option value="Maroon">Maroon</option>
+            <option value="MidnightBlue">Midnight Blue</option>
+            <option value="Orange">Orange</option>
+            <option value="Pink">Pink</option>
+            <option value="Purple">Purple</option>
+            <option value="Red">Red</option>
+            <option value="Silver">Silver</option>
+            <option value="DarkSlateGray">Slate Gray</option>
+            <option value="SkyBlue">Sky Blue</option>
+            <option value="Tan">Tan</option>
+            <option value="Teal">Teal</option>
+            <option value="Violet">Violet</option>
+            <option value="White">White</option>
+            <option value="Yellow">Yellow</option> 
+        </select><br />
+        <input type="submit" value="Add" />
+        <input type="reset" />
+    </form>
 </div>
