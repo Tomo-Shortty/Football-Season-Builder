@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Development\\Football-Season-Builder\\FootballSeasonBuilder\\FootballSeasonBuilder\\FootballSeasonBuilder.csproj",
-      "projectName": "FootballSeasonBuilder",
-      "projectPath": "C:\\Development\\Football-Season-Builder\\FootballSeasonBuilder\\FootballSeasonBuilder\\FootballSeasonBuilder.csproj",
+      "projectUniqueName": "C:\\Development\\Football-Season-Builder\\FootballSeasonBuilder\\FootballSeasonBuilderClassLibrary\\FootballSeasonBuilderClassLibrary.csproj",
+      "projectName": "FootballSeasonBuilderClassLibrary",
+      "projectPath": "C:\\Development\\Football-Season-Builder\\FootballSeasonBuilder\\FootballSeasonBuilderClassLibrary\\FootballSeasonBuilderClassLibrary.csproj",
       "packagesPath": "C:\\Users\\Tomo\\.nuget\\packages\\",
-      "outputPath": "C:\\Development\\Football-Season-Builder\\FootballSeasonBuilder\\FootballSeasonBuilder\\obj\\",
+      "outputPath": "C:\\Development\\Football-Season-Builder\\FootballSeasonBuilder\\FootballSeasonBuilderClassLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -60,9 +60,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
