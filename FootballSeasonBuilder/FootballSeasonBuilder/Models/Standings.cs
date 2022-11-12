@@ -1,6 +1,6 @@
 ﻿namespace FootballSeasonBuilder.Models
 {
-    public class TeamStandings
+    public class Standings
     {
         public int Id { get; set; }
         public string Team { get; set; }

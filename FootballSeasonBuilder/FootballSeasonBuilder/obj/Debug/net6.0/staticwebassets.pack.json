@@ -9,6 +9,34 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Development\\Football-Season-Builder\\FootballSeasonBuilder\\FootballSeasonBuilder\\wwwroot\\data\\leagues.json",
+      "PackagePath": "staticwebassets\\data\\leagues.json"
+    },
+    {
+      "Id": "C:\\Development\\Football-Season-Builder\\FootballSeasonBuilder\\FootballSeasonBuilder\\wwwroot\\data\\matches.json",
+      "PackagePath": "staticwebassets\\data\\matches.json"
+    },
+    {
+      "Id": "C:\\Development\\Football-Season-Builder\\FootballSeasonBuilder\\FootballSeasonBuilder\\wwwroot\\data\\rounds.json",
+      "PackagePath": "staticwebassets\\data\\rounds.json"
+    },
+    {
+      "Id": "C:\\Development\\Football-Season-Builder\\FootballSeasonBuilder\\FootballSeasonBuilder\\wwwroot\\data\\seasons.json",
+      "PackagePath": "staticwebassets\\data\\seasons.json"
+    },
+    {
+      "Id": "C:\\Development\\Football-Season-Builder\\FootballSeasonBuilder\\FootballSeasonBuilder\\wwwroot\\data\\stadiums.json",
+      "PackagePath": "staticwebassets\\data\\stadiums.json"
+    },
+    {
+      "Id": "C:\\Development\\Football-Season-Builder\\FootballSeasonBuilder\\FootballSeasonBuilder\\wwwroot\\data\\standings.json",
+      "PackagePath": "staticwebassets\\data\\standings.json"
+    },
+    {
+      "Id": "C:\\Development\\Football-Season-Builder\\FootballSeasonBuilder\\FootballSeasonBuilder\\wwwroot\\data\\teams.json",
+      "PackagePath": "staticwebassets\\data\\teams.json"
+    },
+    {
       "Id": "C:\\Development\\Football-Season-Builder\\FootballSeasonBuilder\\FootballSeasonBuilder\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

@@ -15,7 +15,7 @@ namespace FootballSeasonBuilder.Models
         public string? SecondColour { get; set;}
         public string? ThirdColour { get; set;}
         public string? FourthColour { get; set;}
-        public string Stadium { get; set; }
+        public string? Stadium { get; set; }
         public int Championships { get; set; }
         public int Premierships { get; set; }
         public int RunnerUps { get; set; }
