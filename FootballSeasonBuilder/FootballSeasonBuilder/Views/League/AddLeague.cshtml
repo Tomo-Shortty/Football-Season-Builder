@@ -1,5 +1,56 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Add League";
 }
+
+<div class="text-center">
+    <h1 class="display-4">Add League</h1>
+    <form method="post" asp-controller="League" asp-action="AddLeague">
+        <div class="card">
+            <div class="card-header">
+                <h3>Name</h3>
+            </div>
+            <div class="card-body">
+                <input type="text" id="name" name="name"/>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>Description</h3>
+            </div>
+            <div class="card-body">
+                <input type="text" id="description" name="description" />
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>League Type</h3>
+            </div>
+            <div class="card-body">
+                <select id="leagueType" name="leagueType">
+                    <option value="League">League</option>
+                    <option value="Conference">Conference</option>
+                    <option value="Division">Division</option>
+                </select>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>Number of Conferences</h3>
+            </div>
+            <div class="card-body">
+                <input type="text" id="numberOfConferences" name="numberOfConferences" />
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>Number of Divisions</h3>
+            </div>
+            <div class="card-body">
+                <input type="text" id="numberOfDivisions" name="numberOfDivisions" />
+            </div>
+        </div>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+    </form>
+    <span>@ViewData["Error"]</span>
+</div>
