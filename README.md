@@ -1,2 +1,3 @@
 # Football-Season-Builder
-Personal Project
+
+A web application that creates football teams and plays out their seasons.
